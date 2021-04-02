@@ -49,7 +49,9 @@ def refactor_input():
             hours[f"{date_from_timestamp.hour}h"] = data_from_event
     return hours
 
-
+def div_by_10(h):
+    for k in h.items():
+        print(k)
 h = refactor_input()
 print("hours")
 print(h)
