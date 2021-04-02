@@ -1,6 +1,7 @@
+import csv
+import uuid
 import random
 from datetime import datetime, timedelta
-import uuid
 
 
 mock_data = [
@@ -49,13 +50,23 @@ def refactor_input():
     return hours
 
 
-def div_by_10(h):
-    for key, value in h.items():
+def div_by_10(event_list):
+    for key, value in event_list.items():
         for items in value:
             items["constance_mult"] = items["event"] + " multiply by 0.1"
 
 
-h = refactor_input()
-print(h)
-div_by_10(h)
-print(h)
+def csv_export(event_list):
+    with open("mycsvfile.csv", "w") as f:
+        w = csv.DictWriter(f, event_list.keys())
+        w.writeheader()
+        for key, value in event_list.items():
+            for v in event_list[key]:
+                w.writerow({key: v})
+
+
+event_list = refactor_input()
+print(event_list)
+div_by_10(event_list)
+print(event_list)
+csv_export(event_list)
