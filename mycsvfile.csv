@@ -1,7 +1,7 @@
-20,19,22
-"{'event': 'video_completed', 'timestamp': '2021-04-02 20:50:36', 'constance_mult': 'video_completed multiply by 0.1'}",,
-,"{'event': 'video_completed', 'timestamp': '2021-04-02 19:50:36', 'constance_mult': 'video_completed multiply by 0.1'}",
-,"{'event': 'video_25', 'timestamp': '2021-04-02 19:50:36', 'constance_mult': 'video_25 multiply by 0.1'}",
-,"{'event': 'video_completed', 'timestamp': '2021-04-02 19:50:36', 'constance_mult': 'video_completed multiply by 0.1'}",
-,,"{'event': 'video_completed', 'timestamp': '2021-04-02 22:50:36', 'constance_mult': 'video_completed multiply by 0.1'}"
-,,"{'event': 'video_50', 'timestamp': '2021-04-02 22:50:36', 'constance_mult': 'video_50 multiply by 0.1'}"
+17,19,20,22
+"{'event': 'video_75', 'timestamp': '2021-04-02 17:58:02', 'constance_mult': 'video_75 multiply by 0.1'}",,,
+,"{'event': 'video_start', 'timestamp': '2021-04-02 19:58:02', 'constance_mult': 'video_start multiply by 0.1'}",,
+,"{'event': 'video_50', 'timestamp': '2021-04-02 19:58:02', 'constance_mult': 'video_50 multiply by 0.1'}",,
+,,"{'event': 'video_start', 'timestamp': '2021-04-02 20:58:02', 'constance_mult': 'video_start multiply by 0.1'}",
+,,"{'event': 'video_75', 'timestamp': '2021-04-02 20:58:02', 'constance_mult': 'video_75 multiply by 0.1'}",
+,,,"{'event': 'video_start', 'timestamp': '2021-04-02 22:58:02', 'constance_mult': 'video_start multiply by 0.1'}"

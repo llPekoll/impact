@@ -64,12 +64,12 @@ def csv_export(event_list):
             for v in event_list[key]:
                 w.writerow({key: v})
 
-def get_ids():
-    return mock_for_test
+
+def get_ids(entry):
+    return {keys.get("id") for keys in entry}
+
+
 event_list = refactor_input()
-print(event_list)
 div_by_10(event_list)
-print(event_list)
 csv_export(event_list)
-print("get ids")
-print(get_ids)
+print(get_ids(mock_for_test))
