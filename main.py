@@ -23,7 +23,9 @@ for x in range(6):
     mock_for_test.append(dict_mock)
 print(mock_for_test)
 
-# def first_func():
-#     event = [{"nb_event":3,
-#     "event_type":3,
-#     "date":3,}]
+
+def first_func():
+    for x in mock_for_test:
+        print(x.get(datetime.fromtimestamp(x.get("timestamp"))))
+
+first_func()
