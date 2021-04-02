@@ -31,4 +31,3 @@ for x in range(6):
         "timestamp": int(timestamp.timestamp()),
     }
     mock_for_test.append(dict_mock)
-print(mock_for_test)

@@ -5,6 +5,8 @@ csv_output = "events.csv"
 
 
 def refactor_input(mock_for_test):
+    if not isinstance(mock_for_test, list):
+        return "please provide a list please"
     hours = {}
     for mock in mock_for_test:
         date_from_timestamp = datetime.fromtimestamp(mock.get("timestamp"))
@@ -21,10 +23,12 @@ def refactor_input(mock_for_test):
 
 
 def div_by_10(event_list):
+    if not isinstance(event_list, dict):
+        return "please provide a dict please"
     for key, value in event_list.items():
         for items in value:
             items["constance_mult"] = items["event"] + " multiply by 0.1"
-    return {"success": True}
+    return event_list
 
 
 def csv_export(event_list):

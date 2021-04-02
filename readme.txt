@@ -2,10 +2,14 @@
 
 
 ## install the packages
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`  
 
 ## run the server
-`uvicorn main:app --reload`
+`uvicorn main:app --reload`  
+then go to http://127.0.0.1:8000 using POST Request Method  
+
+## Run the test
+Just write `pytest` in the console  
 
 
 ## sample request
