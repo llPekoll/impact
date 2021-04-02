@@ -31,7 +31,6 @@ for x in range(6):
         "timestamp": int(timestamp.timestamp()),
     }
     mock_for_test.append(dict_mock)
-print(mock_for_test)
 
 
 def refactor_input():
@@ -44,14 +43,19 @@ def refactor_input():
         if hours.get(date_from_timestamp.hour):
             app = list(hours.get(date_from_timestamp.hour))
             app.append(data_from_event[0])
-            hours[f"{date_from_timestamp.hour}h"] = app
+            hours[date_from_timestamp.hour] = app
         else:
-            hours[f"{date_from_timestamp.hour}h"] = data_from_event
+            hours[date_from_timestamp.hour] = data_from_event
     return hours
 
+
 def div_by_10(h):
-    for k in h.items():
-        print(k)
+    for key, value in h.items():
+        for items in value:
+            items["constance_mult"] = items["event"] + " multiply by 0.1"
+
+
 h = refactor_input()
-print("hours")
+print(h)
+div_by_10(h)
 print(h)
